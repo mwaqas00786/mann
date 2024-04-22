@@ -1,0 +1,340 @@
+#header {
+    background:#314370;
+  
+}
+
+.nav-item{
+    padding-left: 15px;
+   
+}
+.btn-number{
+    background: none;
+    border: 1px solid white  !important;
+    outline: none;
+    border: none;
+    color: white!important;
+}
+.style-link{
+    color: white!important;
+}
+.btn-number:hover{
+    opacity: 0.5;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+.icon-phone{
+    margin-right: 10px;
+}
+
+
+
+.Discover-section{
+    margin-top: 40px;
+}
+
+
+
+.right-section-img{
+    text-align: right;
+}
+.social-icon{
+    text-align: center;
+    margin-top: 20px;
+}
+.icon-1   {
+    margin-left: 40px;
+}
+.icon-2{
+    margin-left: 40px;
+}
+.icon-3{
+    margin-left: 40px;
+}
+
+
+
+.video-section{
+    background-color: #E0E8E7;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0px;
+    
+}
+.video-1{
+   
+}
+
+.why-coach-section{
+    background-color: #314370;
+}
+.coach-heading-section{
+    padding-top: 40px;
+    color: white;
+    text-align: center;
+}
+.coach-card-section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.svg-01{
+margin-right: 10px;
+}
+
+.coaching-h4{
+    color: white;
+}
+.coaching-p{
+    color: white;
+}
+
+.sofa-img{
+    padding: 50px 0px;
+    width: 100%;  
+}
+
+.topic-section{
+    margin-bottom: 50px;
+}
+
+.topic-text{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-1{
+    background-color: #314370;
+    text-align: center;
+    color: white;
+    padding: 30px 0px;
+}
+.read-more-btn{
+    background: none;
+    border: 1px solid white  !important;
+    outline: none;
+    border: none;
+    color: white!important;
+}
+.read-more-btn:hover{
+   opacity: 0.5;
+    outline: none;
+    border: none;
+    color: white!important;
+    cursor: pointer;
+}
+.line{
+    width: 60%;
+    color: white;
+    border-width: 2px;
+    background-color: white;
+
+}
+.text-p{
+    padding: 0px 10px;
+    font-size: 12px;
+}
+
+
+.reviews-section{
+    background-color: #314370;
+    padding: 50px 0px;
+    margin-bottom: 50px;
+}
+.styly-i-c{
+     width: 3%!important;
+}
+.text-reviews{
+    text-align: center;
+    color: white;
+    width:80%;
+    margin: auto;
+}
+.span-text{
+    margin-left: 10px;
+}
+
+.row{
+    
+    width: 100%;
+}
+.blogs-text{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.blogs-h{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.btn-life-s{
+    position: absolute;
+    right:40px;
+    top:220px;
+    background-color: rgba(49, 67, 112, 1);
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    padding: 3px 12px;
+}
+.btn-life-s:hover{
+   opacity: 0.8;
+   cursor: pointer;
+}
+.footer-sec{
+    margin: 30px 40px;
+}
+.s-card{
+    margin: 0px 30px;
+}
+.card-img-1{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    
+}
+.see-more-c{
+    background: #1B6D68;
+    outline: none;
+    border: none;
+    color: white!important;
+    text-align: center;
+    padding: 6px 10px;
+    margin:20px 0px;
+}
+.see-more-c:hover{
+    opacity: 0.8;
+    outline: none;
+    cursor: pointer;
+   
+}
+
+
+.s-journey{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.heading-journey{
+    font-weight: bold;
+}
+.video{
+    width: 100%;
+}
+
+.prciing-section{
+    padding: 50px 0px;
+}
+.h-price{
+    font-weight: bold;
+}
+.pricing-text{
+    width: 50%;
+}
+.book-pricing-btn{
+    background: #314370;
+    outline: none;
+    border: none;
+    color: white!important;
+    text-align: center;
+    padding: 6px 10px;
+     
+}
+.book-pricing-btn:hover{
+   opacity: 0.7;
+   cursor: pointer;
+     
+}
+
+
+.appointment-section{
+    background-color: #E0E8E7;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.appointment{
+    text-align: center;
+    padding-bottom: 30px;
+    width: 60%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.form-section{
+    background-color: #FFFFFF;
+    padding: 15px 15px;
+    width: 60%;
+    margin: auto;
+    border-radius: 5px;
+}
+.req{
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+.f-n{
+    width: 50%;
+    float: left;
+}
+.l-n{
+    width: 50%;
+    float: right;
+    padding-left: 10px;
+}
+.place-b{
+    background-color: rgba(15, 15, 15, 0.1)!important ;
+}
+.p-about{
+    height: 135px;
+}
+.app-btn{
+    background-color: rgba(27, 109, 104, 1);
+    width: 100%;
+    color: white;
+}
+.app-btn:hover{
+opacity: 0.7;
+}
+.note-p{
+    padding-top: 10px;
+}
+.footer-bg{
+    background-color: #314370;
+}
+.section-f{
+    padding: 50px 0px;
+    color: white;
+}
+.text-reset{
+    color: white;
+}
+.text-reset:hover{
+    color: white;
+}
+.icon-s{
+    margin-left: 10px;
+}
+
+
+.time-text{
+    float: right;
+}
+.book-a-btn{
+    background: none;
+    border: 1px solid white  !important;
+    outline: none;
+    border: none;
+    color: white!important;
+    padding: 5px 15px;
+}
+.book-a-btn:hover{
+   cursor: pointer;
+}
+.text-c{
+    background-color: #1B6D68 ;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px;
+}
