@@ -134,7 +134,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .video-1{
    
 }
+.slick-slide {
+    margin: 0 17px;
+}
 
+/* the parent */
+.slick-list {
+    margin: 0 -17px;
+}
+.card-img{
+    width:100%;
+}
 .why-coach-section{
     background-color: #314370;
 }
