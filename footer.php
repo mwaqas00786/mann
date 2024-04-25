@@ -12,7 +12,7 @@
 ?>
 
 	<!--Footer--> 
-
+</div>
 <footer class="footer-bg">
 	
 	<section class="section-f">
@@ -91,9 +91,10 @@
 	</div>
 	
   </footer>
-</div><!-- #page -->
+
 
 <?php wp_footer(); ?>
+</div>
 
 </body>
 </html>

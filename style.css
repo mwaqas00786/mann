@@ -131,9 +131,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     padding: 50px 0px;
     
 }
-.video-1{
-   
-}
+
 .slick-slide {
     margin: 0 17px;
 }
@@ -291,6 +289,10 @@ hr {
     text-align: center;
     padding: 6px 10px;
     margin:20px 0px;
+}
+.select-session {
+
+    background-color:  rgba(15, 15, 15, 0.1) !important;
 }
 .see-more-c:hover{
     opacity: 0.8;

@@ -174,6 +174,113 @@ add_action( 'wp_enqueue_scripts', function() {
     wp_dequeue_style( 'classic-theme-styles' );
 }, 20 );
 
+/*
+* Creating a function to create our CPT
+*/
+  
+function custom_post_type() {
+  
+	// Set UI labels for Custom Post Type
+		$labels = array(
+			'name'                => _x( 'Appointment', 'Post Type General Name', 'mann' ),
+			'singular_name'       => _x( 'Appointment', 'Post Type Singular Name', 'mann' ),
+			'menu_name'           => __( 'Appointments', 'mann' ),
+			'parent_item_colon'   => __( 'Parent Appointment', 'mann' ),
+			'all_items'           => __( 'All Appointments', 'mann' ),
+			'view_item'           => __( 'View Appointment', 'mann' ),
+			'add_new_item'        => __( 'Add New Appointment', 'mann' ),
+			'add_new'             => __( 'Add New', 'mann' ),
+			'edit_item'           => __( 'Edit Movie', 'mann' ),
+			'update_item'         => __( 'Update Movie', 'mann' ),
+			'search_items'        => __( 'Search Movie', 'mann' ),
+			'not_found'           => __( 'Not Found', 'mann' ),
+			'not_found_in_trash'  => __( 'Not found in Trash', 'mann' ),
+		);
+		  
+	// Set other options for Custom Post Type
+		  
+		$args = array(
+			'label'               => __( 'movies', 'mann' ),
+			'description'         => __( 'Movie news and reviews', 'mann' ),
+			'labels'              => $labels,
+			// Features this CPT supports in Post Editor
+			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+			// You can associate this CPT with a taxonomy or custom taxonomy. 
+			'taxonomies'          => array( 'tax_appointment' ),
+			/* A hierarchical CPT is like Pages and can have
+			* Parent and child items. A non-hierarchical CPT
+			* is like Posts.
+			*/
+			'hierarchical'        => false,
+			'public'              => true,
+			'show_ui'             => true,
+			'show_in_menu'        => true,
+			'show_in_nav_menus'   => true,
+			'show_in_admin_bar'   => true,
+			'menu_position'       => 5,
+			'can_export'          => true,
+			'has_archive'         => true,
+			'exclude_from_search' => false,
+			'publicly_queryable'  => true,
+			'capability_type'     => 'post',
+			'show_in_rest' => true,
+	  
+		);
+		  
+		// Registering your Custom Post Type
+		register_post_type( 'appointments', $args );
+	  
+	}
+// Add custom columns
+function custom_post_type_columns($columns) {
+    // Change the Title column name to "First Name"
+    $columns['title'] = 'First Name';
+
+    // Add custom columns before the "Author" column
+    $new_columns = array();
+	
+    foreach ($columns as $key => $value) {
+        if ($key === 'author') {
+            $new_columns['last_name'] = 'Last Name';
+            $new_columns['session_type'] = 'Session Type';
+            $new_columns['email'] = 'Email';
+            $new_columns['about'] = 'About';
+            $new_columns['aknowledge'] = 'Aknowledge';
+        }
+        $new_columns[$key] = $value;
+    }
+    return $new_columns;
+}
+add_filter('manage_appointments_posts_columns', 'custom_post_type_columns');
+
+// Populate custom column data
+function custom_post_type_column_data($column, $post_id) {
+    switch ($column) {
+        case 'last_name':
+            echo get_post_meta($post_id, 'appointment_lastname_meta_key', true);
+            break;
+        case 'session_type':
+            echo get_post_meta($post_id, 'appointment_type_meta_key', true);
+            break;
+        case 'email':
+            echo get_post_meta($post_id, 'appointment_email_meta_key', true);
+            break;
+        case 'about':
+        the_content();
+            break;
+        case 'aknowledge':
+            echo get_post_meta($post_id, 'appointment_akn_meta_key', true);
+            break;
+    }
+}
+add_action('manage_appointments_posts_custom_column', 'custom_post_type_column_data', 10, 2);
+	  
+	/* Hook into the 'init' action so that the function
+	* Containing our post type registration is not 
+	* unnecessarily executed. 
+	*/
+	  
+	add_action( 'init', 'custom_post_type', 0 );
 /**
  * Implement the Custom Header feature.
  */
