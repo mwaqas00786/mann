@@ -190,9 +190,9 @@ function custom_post_type() {
 			'view_item'           => __( 'View Appointment', 'mann' ),
 			'add_new_item'        => __( 'Add New Appointment', 'mann' ),
 			'add_new'             => __( 'Add New', 'mann' ),
-			'edit_item'           => __( 'Edit Movie', 'mann' ),
-			'update_item'         => __( 'Update Movie', 'mann' ),
-			'search_items'        => __( 'Search Movie', 'mann' ),
+			'edit_item'           => __( 'Edit Appointment', 'mann' ),
+			'update_item'         => __( 'Update Appointment', 'mann' ),
+			'search_items'        => __( 'Search Appointment', 'mann' ),
 			'not_found'           => __( 'Not Found', 'mann' ),
 			'not_found_in_trash'  => __( 'Not found in Trash', 'mann' ),
 		);
@@ -200,8 +200,8 @@ function custom_post_type() {
 	// Set other options for Custom Post Type
 		  
 		$args = array(
-			'label'               => __( 'movies', 'mann' ),
-			'description'         => __( 'Movie news and reviews', 'mann' ),
+			'label'               => __( 'Appointments', 'mann' ),
+			'description'         => __( 'Appointment news and reviews', 'mann' ),
 			'labels'              => $labels,
 			// Features this CPT supports in Post Editor
 			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),

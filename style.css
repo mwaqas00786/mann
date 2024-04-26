@@ -272,9 +272,9 @@ hr {
 .footer-sec{
     margin: 30px 40px;
 }
-.s-card{
+/* .s-card{
     margin: 0px 30px;
-}
+} */
 .card-img-1{
     width: 50px;
     height: 50px;
@@ -300,8 +300,25 @@ hr {
     cursor: pointer;
    
 }
-
-
+.discover-sec{
+    padding-top: 30px;
+}
+.insight-h{
+color: #314370;
+}
+.explore-btn{
+    background: #1B6D68;
+    outline: none;
+    border: none;
+    color: white!important;
+    text-align: center;
+    padding: 6px 10px;
+    margin:20px 0px;
+}
+.explore-btn:hover{
+        cursor: pointer;
+        opacity: 0.7;
+}
 .s-journey{
     text-align: center;
     width: 80%;
@@ -377,9 +394,7 @@ hr {
 .place-b{
     background-color: rgba(15, 15, 15, 0.1)!important ;
 }
-.p-about{
-    height: 135px;
-}
+ 
 .app-btn{
     background-color: rgba(27, 109, 104, 1);
     width: 100%;
