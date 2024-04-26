@@ -131,6 +131,42 @@ function mann_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+	register_sidebar( array(
+		'name' => 'Footer Section 1',
+		'id' => 'footer-section-1',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h6>',
+		'after_title' => '</h6>',
+		) );
+		register_sidebar( array(
+		'name' => 'Footer Section 2',
+		'id' => 'footer-section-2',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '<h6>',
+		'after_title' => '</h6>',
+		) );
+		register_sidebar( array(
+		'name' => 'Footer section 3',
+		'id' => 'footer-section-3',
+		'description' => 'Appears in the footer area',
+		'before_widget' => ' ',
+		'after_widget' => '',
+		'before_title' => '<h6 class="widget-title">',
+		'after_title' => '</h6>',
+		) );
+		register_sidebar( array(
+			'name' => 'Footer section 4',
+			'id' => 'footer-section-4',
+			'description' => 'Appears in the footer area',
+			'before_widget' => '',
+			'after_widget' => '',
+			'before_title' => '<h6>',
+			'after_title' => '</h6>',
+			) );
 }
 add_action( 'widgets_init', 'mann_widgets_init' );
 
@@ -274,6 +310,10 @@ function custom_post_type_column_data($column, $post_id) {
     }
 }
 add_action('manage_appointments_posts_custom_column', 'custom_post_type_column_data', 10, 2);
+function enqueue_custom_admin_scripts() {
+    wp_enqueue_script('custom-admin-script', get_template_directory_uri() . '/js/mann-admin-script.js', array('jquery'), '1.0', true);
+}
+add_action('admin_enqueue_scripts', 'enqueue_custom_admin_scripts');
 	  
 	/* Hook into the 'init' action so that the function
 	* Containing our post type registration is not 
@@ -281,6 +321,15 @@ add_action('manage_appointments_posts_custom_column', 'custom_post_type_column_d
 	*/
 	  
 	add_action( 'init', 'custom_post_type', 0 );
+
+	// Register the custom widget
+function register_custom_widget() {
+    register_widget( 'Logo_Content_Widget' );
+	register_widget( 'Contact_Us_Widget' );
+	register_widget( 'Operating_Hour_Widget' );
+
+}
+add_action( 'widgets_init', 'register_custom_widget' );
 /**
  * Implement the Custom Header feature.
  */
@@ -300,6 +349,12 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+/**
+ * Footer widgets
+ */
+require get_template_directory() . '/footer-widgets/logo-content.php';
+require get_template_directory() . '/footer-widgets/contact-us.php';
+require get_template_directory() . '/footer-widgets/operating-hour.php';
 
 /**
  * Load Jetpack compatibility file.
