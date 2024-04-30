@@ -316,6 +316,25 @@ function enqueue_custom_admin_scripts() {
     wp_enqueue_script('custom-admin-script', get_template_directory_uri() . '/js/mann-admin-script.js', array('jquery'), '1.0', true);
 }
 add_action('admin_enqueue_scripts', 'enqueue_custom_admin_scripts');
+// Add customizer settings for header image
+function theme_customizer_settings($wp_customize) {
+    $wp_customize->add_section('header_image_section', array(
+        'title' => __('Header Image', 'theme'),
+        'priority' => 30,
+    ));
+    
+    $wp_customize->add_setting('header_image', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'header_image', array(
+        'label' => __('Upload Header Image', 'theme'),
+        'section' => 'header_image_section',
+        'settings' => 'header_image',
+    )));
+}
+add_action('customize_register', 'theme_customizer_settings');
 	  
 	/* Hook into the 'init' action so that the function
 	* Containing our post type registration is not 
