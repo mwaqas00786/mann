@@ -66,7 +66,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
 **/
-
+.home #page{
+    display: block;
+    width: 100%;
+    float: left;
+    overflow: hidden;  
+}
  #header {
     background:#314370;
   
@@ -279,9 +284,9 @@ hr {
     margin: 0px 30px;
 } */
 .card-img-1{
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
+    width: 50px!important;
+    height: 50px!important;
+    border-radius: 50%!important;
     
 }
 .see-more-c{
@@ -480,10 +485,37 @@ opacity: 0.7;
 .img-s-b{
     width: 40%;
 }
+.sect-blogs{
+     margin-bottom: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,.125) ;
+       transition: .5s ease;
+}
+.sect-blogs:hover{
+    box-shadow: 10px 0px 8px 7px rgba(0,0,0,0.15);
+    transition: .5s ease;
+    cursor: pointer;
+}
+.l-blogs-s{
+    transition: .5s ease;
+}
+.l-blogs-s:hover{
+    box-shadow: 10px 0px 8px 7px rgba(0,0,0,0.15);
+    transition: .5s ease;
+    cursor: pointer;
+}
 .left-img-blogs{
 width: 100%;
 float: left;
-height: 300px;
+height: 240px!important;
+transition: .5s ease;
+
+  }
+  .left-img-blogs:hover{
+    opacity: 0.8;
+    cursor: pointer;
+  
+    
   }
 .blogs-text-r{
   float: right;
@@ -528,7 +560,16 @@ height: 300px;
 }
 
 .blogs-c{
-    height: 530px;
+    /* height: 530px; */
+    transition: .5s ease;
+
+
+}
+.blogs-c:hover{
+    box-shadow: 10px 0px 8px 7px rgba(0,0,0,0.15);
+    transition: .5s ease;
+    cursor: pointer;
+
 }
 
 .the-art-text{
@@ -538,11 +579,21 @@ height: 300px;
     margin-bottom: 0px;
 }
 .card-img-till{
-    width:40px;
-    height: 40px;
-    border-radius: 50%;
+  
+    border-radius: 50% !important;
 }
-
+.details-h{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.img-d-p{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.para-d{
+    margin-top: 20px;
+}
 @media screen and (max-width: 768px) {
     .blogs-c{
        

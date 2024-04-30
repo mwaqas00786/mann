@@ -40,6 +40,7 @@
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <div id="navbarNavDropdown" class="navbar-collapse collapse">
                     <ul class="navbar-nav mr-auto">
                     </ul>
                     <!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php //esc_html_e( 'Primary Menu', 'mann' ); ?></button> -->
@@ -51,6 +52,7 @@
 				
 			) );
 			?>
+            </div>
                 </nav><!-- #site-navigation -->
             </div>
         </header><!-- #masthead -->
