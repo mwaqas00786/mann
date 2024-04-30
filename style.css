@@ -179,6 +179,9 @@ margin-right: 10px;
     text-align: center;
     margin-bottom: 30px;
 }
+.card{
+    height: 620px;
+} 
 
 .card-1{
     background-color: #314370;
@@ -301,7 +304,7 @@ hr {
    
 }
 .discover-sec{
-    padding-top: 30px;
+    padding-top: 100px;
 }
 .insight-h{
 color: #314370;
@@ -422,7 +425,20 @@ opacity: 0.7;
 .icon-s{
     margin-left: 10px;
 }
+.menu{
+    padding: 0px;
+}
+.link-footer{
+   
+    list-style-type: none;
+    padding-top: 8px;;
 
+}
+.link-footer a{
+   
+    color: #FFFFFF!important;
+
+}
 
 .time-text{
     float: right;
@@ -447,3 +463,93 @@ opacity: 0.7;
 .topic-space {
     margin: 10px 0px 10px 0px;
 }
+.btn-blogs1-img{
+    position: absolute;
+    right:40px;
+    top:150px;
+    background-color: rgba(49, 67, 112, 1);
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    padding: 3px 12px;
+}
+.btn-blogs1-img:hover{
+   cursor: pointer;
+   opacity: 0.8;
+}
+.img-s-b{
+    width: 40%;
+}
+.left-img-blogs{
+width: 100%;
+float: left;
+height: 300px;
+  }
+.blogs-text-r{
+  float: right;
+    width: 60%;
+    padding-left: 14px;
+}
+.style-text-p{
+    font-size: 15px;
+}
+.blogs-left-sec{
+    overflow: hidden;
+}
+.btn-blogs-r-s{
+    position: absolute;
+    left:120px;
+    background-color: rgba(49, 67, 112, 1);
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    padding: 3px 12px;
+}
+.btn-blogs-r-s:hover{
+ cursor: pointer;
+ opacity: 0.8;
+}
+.footer-sec2{
+    padding: 15px;
+}
+.btn-life-s-b{
+    position: absolute;
+    top: 120px;
+    right:20px;
+     background-color: rgba(49, 67, 112, 1);
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    padding: 3px 12px;
+}
+.btn-life-s-b:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.blogs-c{
+    height: 530px;
+}
+
+.the-art-text{
+    height: 100%;
+}
+.til-h{
+    margin-bottom: 0px;
+}
+.card-img-till{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .blogs-c{
+       
+    }
+    .btn-life-s-b{
+        position: absolute;
+        top: 55px;
+        right:20px;
+    }
+  }
