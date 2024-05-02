@@ -66,12 +66,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
 **/
-/* .home #page{
-    display: block;
-    width: 100%;
-    float: left;
-    overflow: hidden;  
-} */
+
  #header {
     background:#314370;
   
@@ -149,6 +144,10 @@ li.main-last-tab{
 }
 .card-img{
     width:100%;
+    
+}
+.postin-btn-img{
+    position: relative;
 }
 .why-coach-section{
     background-color: #314370;
@@ -187,7 +186,7 @@ margin-right: 10px;
     margin-bottom: 30px;
 }
 .card{
-    height: 620px;
+    height: 650px;
 } 
 
 .card-1{
@@ -195,6 +194,7 @@ margin-right: 10px;
     text-align: center;
     color: white;
     padding: 30px 0px;
+    height: 100%;
 }
 .read-more-btn{
     background: none;
@@ -253,7 +253,7 @@ hr {
 
 .row{
     
-    width: 100%;
+    /* width: 100%; */
 }
 .blogs-text{
     width: 70%;
@@ -268,7 +268,7 @@ hr {
 .btn-life-s{
     position: absolute;
     right:40px;
-    top:220px;
+    top:20%;
     background-color: rgba(49, 67, 112, 1);
     outline: none;
     border: none;
@@ -286,7 +286,7 @@ hr {
     margin: 0px 30px;
 } */
 .card-img-1{
-    width: 50px!important;
+    max-width: 50px!important;
     height: 50px!important;
     border-radius: 50%!important;
     
@@ -486,6 +486,7 @@ opacity: 0.7;
 }
 .img-s-b{
     width: 40%;
+    object-fit: cover;
 }
 .sect-blogs{
      margin-bottom: 15px;
@@ -494,7 +495,7 @@ opacity: 0.7;
        transition: .5s ease;
 }
 .sect-blogs:hover{
-    box-shadow: 10px 0px 8px 7px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.15);
     transition: .5s ease;
     cursor: pointer;
 }
@@ -502,14 +503,14 @@ opacity: 0.7;
     transition: .5s ease;
 }
 .l-blogs-s:hover{
-    box-shadow: 10px 0px 8px 7px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.15);
     transition: .5s ease;
     cursor: pointer;
 }
 .left-img-blogs{
 width: 100%;
 float: left;
-height: 240px!important;
+height: 262px!important;
 transition: .5s ease;
 
   }
@@ -532,7 +533,8 @@ transition: .5s ease;
 }
 .btn-blogs-r-s{
     position: absolute;
-    left:120px;
+    right: 60%;
+    
     background-color: rgba(49, 67, 112, 1);
     outline: none;
     border: none;
@@ -568,7 +570,7 @@ transition: .5s ease;
 
 }
 .blogs-c:hover{
-    box-shadow: 10px 0px 8px 7px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.15);
     transition: .5s ease;
     cursor: pointer;
 
@@ -583,6 +585,7 @@ transition: .5s ease;
 .card-img-till{
   
     border-radius: 50% !important;
+    padding-bottom: 10px;
 }
 .details-h{
     margin-top: 30px;
@@ -599,13 +602,153 @@ transition: .5s ease;
 .page-wrap {
     min-height: 50vh;
 }
+#scrollToTopBtn {
+    display: none; /* Hide the button by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Place the button 20px from the bottom */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    width: 50px; /* Set width */
+    height: 50px; /* Set height to match width for a perfect circle */
+    padding: 0; /* Remove padding */
+    border-radius: 50%; /* Rounded corners to make it circular */
+    font-size: 17px; /* Set font size */
+    line-height: 50px; /* Set line height to center content vertically */
+    text-align: center; /* Center text horizontally */
+}
+
+    #scrollToTopBtn::before {
+        content: '\25B2'; /* Unicode for a top arrow */
+    }
+  /* On hover, add a lighter background color */
+  #scrollToTopBtn:hover {
+    background-color: #314370;
+  }
+  .site-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.795); /* Semi-transparent white background */
+    z-index: 9999; /* Make sure it appears above all other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 20px;
+   
+    
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey border */
+    border-top: 16px solid #314370; /* Blue border (replace with your desired color) */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite; /* Animation for spinning effect */
+}
+#Pricing .table{
+    display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+  table-layout:fixed;
+   }
+   .table-wrapper{
+    width: 100%;
+  }
+  .table-wrapper{
+    width: 100%;
+  }
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 @media screen and (max-width: 768px) {
-    .blogs-c{
-       
+    .card{
+       height: 100%;
     }
     .btn-life-s-b{
         position: absolute;
-        top: 55px;
-        right:20px;
+        top: 2%;
+        right:10%;
     }
+    .pricing-text{
+    width: 100%;
+    }
+    .img-s-b{
+        width: 100%;
+    }
+    .blogs-text-r{
+        width: 100%;
+        margin-top: 20px;
+    }
+    /* .btn-life-s{
+     
+        top: 170px;
+    } */
+
+    .til-h{
+        margin-top: 10px
+    }
+    .btn-blogs-r-s{
+        right: 2%;
+    }
+  }
+  
+   
+  @media only screen and (max-width: 992px)  {
+    .home #page{
+        display: block;
+        width: 100%;
+        float: left;
+        overflow: hidden;  
+    }
+    .table-wrapper{
+        width: auto;
+        overflow-x: scroll;
+    }
+   #Pricing .table{
+    /* display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+  table-layout:fixed; */
+   } 
+   /* #Pricing .table thead{
+    font-size: 12px;
+   } */
+   #Pricing .table td{
+    padding: 0px !important;
+
+   } 
+   .card-img-till{
+  
+   width: 100%;
+}
+   /* .book-pricing-btn{
+    font-size: 10px;
+    margin-top: 5px;
+   } */
+   
+  }
+  @media only screen  and (max-width: 480px) and (min-width: 0px) {
+
+.f-n , .l-n{
+    width: 100%;
+     padding: 0px;
+}
+.card-img-till{
+    width: 100px;
+    height: 100px!important;
+}
   }

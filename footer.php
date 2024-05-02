@@ -57,6 +57,7 @@
 	
 	  </div>
 	</section>
+	<button onclick="topFunction()" id="scrollToTopBtn" title="Go to top"></button>
 
 	<div class="text-c">
 		© 2024. Mann Und Natur. All rights reserved.
