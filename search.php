@@ -9,9 +9,9 @@
 
 get_header();
 ?>
-
-	<main id="primary" class="site-main">
-
+  <div class="row">
+  <div class="col-md-8">
+	<main id="primary" class="site-main 789">
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -49,5 +49,9 @@ get_header();
 	</main><!-- #main -->
 
 <?php
+echo '</div>';
+echo ' <div class="col-md-4">';
 get_sidebar();
+echo '</div>';
+echo '</div>';
 get_footer();

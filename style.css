@@ -1,8 +1,8 @@
 /*!
-Theme Name: mann_und_natur
-Theme URI: http://underscores.me/
+Theme Name: Mann
+Theme URI: 
 Author: Tillman
-Author URI: http://underscores.me/
+Author URI: 
 Description: Description
 Version: 1.0.0
 Tested up to: 5.4
@@ -66,12 +66,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
 **/
-.home #page{
+/* .home #page{
     display: block;
     width: 100%;
     float: left;
     overflow: hidden;  
-}
+} */
  #header {
     background:#314370;
   
@@ -101,8 +101,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .icon-phone{
     margin-right: 10px;
 }
-
-
+/* last header menu option */
+li.main-last-tab{
+    border:1px solid #fff;
+}
 
 .Discover-section{
     margin-top: 40px;
