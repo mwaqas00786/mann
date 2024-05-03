@@ -31,3 +31,13 @@ window.addEventListener('load', function() {
     var loader = document.querySelector('.site-loader');
     loader.style.display = 'none';
 });
+
+// jQuery(document).ready(function(){
+//     jQuery(window).resize(function(){
+//         if(jQuery(window).width() <= 992){
+//             jQuery('.table-wrapper').addClass('scrollable');
+//         } else {
+//             jQuery('.table-wrapper').removeClass('scrollable');
+//         }
+//     }).resize(); // Trigger resize event on page load
+// });

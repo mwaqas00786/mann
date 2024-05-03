@@ -658,7 +658,7 @@ transition: .5s ease;
     height: 80px;
     animation: spin 2s linear infinite; /* Animation for spinning effect */
 }
-#Pricing .table{
+/* #Pricing .table{
     display: block;
     overflow-x: auto;
     border-collapse: collapse;
@@ -666,10 +666,8 @@ transition: .5s ease;
    }
    .table-wrapper{
     width: 100%;
-  }
-  .table-wrapper{
-    width: 100%;
-  }
+  } */
+  
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -708,47 +706,32 @@ transition: .5s ease;
   
    
   @media only screen and (max-width: 992px)  {
-    .home #page{
-        display: block;
-        width: 100%;
-        float: left;
-        overflow: hidden;  
-    }
-    .table-wrapper{
-        width: auto;
-        overflow-x: scroll;
-    }
-   #Pricing .table{
-    /* display: block;
-    overflow-x: auto;
-    border-collapse: collapse;
-  table-layout:fixed; */
-   } 
-   /* #Pricing .table thead{
-    font-size: 12px;
-   } */
-   #Pricing .table td{
-    padding: 0px !important;
-
-   } 
-   .card-img-till{
+        .home #page{
+            display: block;
+            width: 100%;
+            float: left;
+            overflow: hidden;  
+        }
+        .table-wrapper {
+            overflow-x: auto;
+        }
+        .table-wrapper  .table{
+            width: 100%;
+            table-layout: auto;
+        }
+        .table th, .table td {
+            white-space: nowrap;
+        }
+    } 
   
-   width: 100%;
-}
-   /* .book-pricing-btn{
-    font-size: 10px;
-    margin-top: 5px;
-   } */
-   
-  }
   @media only screen  and (max-width: 480px) and (min-width: 0px) {
 
-.f-n , .l-n{
-    width: 100%;
-     padding: 0px;
-}
-.card-img-till{
-    width: 100px;
-    height: 100px!important;
-}
+        .f-n , .l-n{
+            width: 100%;
+            padding: 0px;
+        }
+        .card-img-till{
+            width: 100px;
+            height: 100px!important;
+        }
   }
