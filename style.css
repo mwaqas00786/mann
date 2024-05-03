@@ -71,7 +71,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     background:#314370;
   
 }
-
+.fa-bars {
+color: white!important;
+font-size: 34px;
+}
 .nav-item{
     padding-left: 15px;
    
@@ -268,7 +271,7 @@ hr {
 .btn-life-s{
     position: absolute;
     right:40px;
-    top:20%;
+    top:4%;
     background-color: rgba(49, 67, 112, 1);
     outline: none;
     border: none;
@@ -280,7 +283,9 @@ hr {
    cursor: pointer;
 }
 .footer-sec{
-    margin: 30px 40px;
+    margin: 20px 40px;
+    position: absolute;
+    bottom: 0%;
 }
 /* .s-card{
     margin: 0px 30px;
@@ -473,7 +478,7 @@ opacity: 0.7;
 .btn-blogs1-img{
     position: absolute;
     right:40px;
-    top:150px;
+    top:2%;
     background-color: rgba(49, 67, 112, 1);
     outline: none;
     border: none;
@@ -550,7 +555,7 @@ transition: .5s ease;
 }
 .btn-life-s-b{
     position: absolute;
-    top: 120px;
+    top: 2%;
     right:20px;
      background-color: rgba(49, 67, 112, 1);
     outline: none;
@@ -673,17 +678,15 @@ transition: .5s ease;
     100% { transform: rotate(360deg); }
 }
 @media screen and (max-width: 768px) {
-    .card{
+    /* .card{
        height: 100%;
-    }
+    } */
     .btn-life-s-b{
         position: absolute;
         top: 2%;
         right:10%;
     }
-    .pricing-text{
-    width: 100%;
-    }
+   
     .img-s-b{
         width: 100%;
     }
@@ -702,9 +705,24 @@ transition: .5s ease;
     .btn-blogs-r-s{
         right: 2%;
     }
+    .discover-sec {
+        padding-top: 30px!important;
+    }
+    .form-section{
+        width: 100%;
+    }
   }
   
-   
+  @media only screen  and (max-width:1024px){
+    .left-img-blogs{
+        height: 298px!important;
+
+    }
+    .discover-sec {
+        padding-top: 50px;
+    }
+     
+  }
   @media only screen and (max-width: 992px)  {
         .home #page{
             display: block;
@@ -722,6 +740,12 @@ transition: .5s ease;
         .table th, .table td {
             white-space: nowrap;
         }
+        .appointment{
+            width: 100%;
+        }
+        .pricing-text{
+            width: 100%;
+            }
     } 
   
   @media only screen  and (max-width: 480px) and (min-width: 0px) {
@@ -732,6 +756,8 @@ transition: .5s ease;
         }
         .card-img-till{
             width: 100px;
-            height: 100px!important;
+          
         }
   }
+
+ 

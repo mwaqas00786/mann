@@ -41,7 +41,7 @@
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="fa fa-bars"></span>
                     </button>
                     <div id="navbarNavDropdown" class="navbar-collapse collapse">
                     <ul class="navbar-nav mr-auto">
