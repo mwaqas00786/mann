@@ -62,6 +62,7 @@
 	<div class="text-c">
 		© 2024. Mann Und Natur. All rights reserved.
 	  <a class="" href="https://mdbootstrap.com/"></a>
+		<a class="term-cond" style="color:#fff" href="<?php echo site_url('privacy-policy');?>">Privacy Term & Conditions</a>
 	</div>
 	
   </footer>
