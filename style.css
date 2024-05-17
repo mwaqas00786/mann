@@ -362,7 +362,8 @@ color: #314370;
     border: none;
     color: white!important;
     text-align: center;
-    padding: 6px 10px;
+    padding: 6px 5px;
+    font-size: 14px;
      
 }
 .book-pricing-btn:hover{
@@ -546,6 +547,9 @@ transition: .5s ease;
     color: #FFFFFF;
     padding: 3px 12px;
 }
+.card h5{
+    font-size: 16px;
+}
 .btn-blogs-r-s:hover{
  cursor: pointer;
  opacity: 0.8;
@@ -703,7 +707,7 @@ transition: .5s ease;
         margin-top: 10px
     }
     .btn-blogs-r-s{
-        right: 2%;
+        right: 4%;
     }
     .discover-sec {
         padding-top: 30px!important;
@@ -711,6 +715,7 @@ transition: .5s ease;
     .form-section{
         width: 100%;
     }
+    
   }
   
   @media only screen  and (max-width:1024px){
