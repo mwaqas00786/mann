@@ -362,9 +362,10 @@ color: #314370;
     border: none;
     color: white!important;
     text-align: center;
-    padding: 6px 5px;
+    padding: 10px 0px;
     font-size: 14px;
-     
+    min-width: 110px;
+    text-transform: capitalize;
 }
 .book-pricing-btn:hover{
    opacity: 0.7;
