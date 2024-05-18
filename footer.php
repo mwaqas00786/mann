@@ -63,8 +63,10 @@
 		© 2024. Mann Und Natur. All rights reserved.
 	  <a class="" href="https://mdbootstrap.com/"></a>
 		<a class="term-cond" style="color:#fff" href="<?php echo site_url('privacy-policy');?>">Privacy Term & Conditions</a>
+		<a href="http://localhost/clinic/wp-content/uploads/2024/05/Impressum.pdf" style="color:white" target="_blank">| Impressum</a>
+
 	</div>
-	
+	 
   </footer>
 
 
