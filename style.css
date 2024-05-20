@@ -668,6 +668,18 @@ transition: .5s ease;
     height: 80px;
     animation: spin 2s linear infinite; /* Animation for spinning effect */
 }
+
+ .elementor-wrapper video {
+    
+    width: 100%!important;
+    display: flex;
+    border: none;
+    background-color: #000;
+    margin: auto!important;
+    object-fit: contain!important;
+}  
+
+
 /* #Pricing .table{
     display: block;
     overflow-x: auto;
